@@ -1,10 +1,10 @@
 FROM node
 
-WORKDIR /home/node/app
+WORKDIR /home/node/app/
 
-COPY *.js /home/node/app
+COPY *.js /home/node/app/
 
-COPY package*.json /home/node/app
+COPY package*.json /home/node/app/
 
 RUN ["npm", "install"]
 
