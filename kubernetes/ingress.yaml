@@ -13,7 +13,7 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: static-nginx
+            name: static
             port:
               number: 80
       - path: /auth
