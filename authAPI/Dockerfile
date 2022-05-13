@@ -1,14 +1,15 @@
-FROM node
+FROM node:latest
 
-WORKDIR /home/node/app
+    WORKDIR /home/node/app
 
-COPY index.js /home/node/app/
-COPY package*.json /home/node/app/
+    COPY *.js /home/node/app
 
-RUN ["npm","install"]
+    COPY package*.json /home/node/app/
 
-ENV NODE_ENV=production
+    RUN ["npm", "install"]
 
-CMD ["node","index.js"]
+    ENV NODE_ENV=production
 
-EXPOSE 3000
+    CMD ["node", "index.js"]
+
+    EXPOSE 3000
