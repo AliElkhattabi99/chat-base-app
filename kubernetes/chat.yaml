@@ -16,7 +16,7 @@ spec:
           imagePullPolicy: IfNotPresent
           image: dokwerker777/chatapp:chatkubv2
           ports:
-            - containerPort: 80
+            - containerPort: 3000
               name: http-web-svc
 
 ---
