@@ -14,7 +14,7 @@ spec:
       containers:
         - name: auth
           imagePullPolicy: IfNotPresent
-          image: dokwerker777/chatapp:authkub
+          image: dokwerker777/chatapp:authkubv2
           ports:
             - containerPort: 80
               name: http-web-svc
